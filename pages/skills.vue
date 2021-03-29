@@ -27,7 +27,19 @@
         <skill-element name="MATLAB" level="soso" />
         <skill-element name="Google Apps Script" level="soso" />
       </ul>
-      <h2 class="headline2">Frameworks</h2>
+      <h2 class="headline2">Frameworks (Front-end)</h2>
+      <ul class="skillList">
+        <skill-element name="Vue.js" level="good" />
+        <ul class="skillList">
+          <skill-element name="Vuex" level="good" />
+          <skill-element name="Nuxt.js" level="good" />
+        </ul>
+        <skill-element name="React" level="soso" />
+        <ul class="skillList">
+          <skill-element name="Next.js" level="soso" />
+        </ul>
+      </ul>
+      <h2 class="headline2">Frameworks (Server-side)</h2>
       <ul class="skillList">
         <skill-element name="FuelPHP" level="good" />
         <skill-element name="Laravel" level="good" />
@@ -35,11 +47,6 @@
           <skill-element name="Laravel Mix" level="good" />
           <skill-element name="Laravel Echo" level="good" />
           <skill-element name="Laravel Sanctum" level="good" />
-        </ul>
-        <skill-element name="Vue.js" level="good" />
-        <ul class="skillList">
-          <skill-element name="Vuex" level="good" />
-          <skill-element name="Nuxt.js" level="good" />
         </ul>
         <skill-element name="Play Framework" level="soso" />
         <skill-element name="Express" level="soso" />
