@@ -13,6 +13,8 @@
         <dd>{{ $t('biography.history.list[1].description') }}</dd>
         <dt>{{ $t('biography.history.list[2].date') }}</dt>
         <dd>{{ $t('biography.history.list[2].description') }}</dd>
+        <dt>{{ $t('biography.history.list[3].date') }}</dt>
+        <dd>{{ $t('biography.history.list[3].description') }}</dd>
       </dl>
       <dl class="historyList-en" v-else>
         <dt>{{ $t('biography.history.list[0].date') }}</dt>
