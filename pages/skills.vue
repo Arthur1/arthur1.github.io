@@ -78,7 +78,7 @@
       <ul class="skillList">
         <skill-element name="Windows" level="good" />
         <skill-element name="macOS" level="good" />
-        <skill-element name="Linux (CentOS, Ubuntu)" level="soso" />
+        <skill-element name="Linux (CentOS, Ubuntu)" level="good" />
       </ul>
       <h2 class="headline2">Misc</h2>
       <ul class="skillList">
