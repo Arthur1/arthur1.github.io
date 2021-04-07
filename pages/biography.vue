@@ -21,13 +21,20 @@
         <dd>{{ $t('biography.history.list[0].description') }}</dd>
         <dt>{{ $t('biography.history.list[1].date') }}</dt>
         <dd>{{ $t('biography.history.list[1].description') }}</dd>
+        <dt>{{ $t('biography.history.list[2].date') }}</dt>
+        <dd>{{ $t('biography.history.list[2].description') }}</dd>
       </dl>
       <h2 class="headline2">{{ $t('biography.currentAffiliation.title') }}</h2>
       <ul>
         <li>{{ $t('biography.currentAffiliation.list[0]') }}</li>
         <li>
-          <a href="https://titech.app/" target="_blank" rel="noopener" :aria-label="$t('biography.currentAffiliation.list[0]')">
+          <a href="https://titech.app/" target="_blank" rel="noopener" :aria-label="$t('biography.currentAffiliation.list[1]')">
             {{ $t('biography.currentAffiliation.list[1]') }}
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mdi.c.titech.ac.jp/" target="_blank" rel="noopener" :aria-label="$t('biography.currentAffiliation.list[2]')">
+            {{ $t('biography.currentAffiliation.list[2]') }}
           </a>
         </li>
       </ul>

@@ -1,5 +1,5 @@
 {
-  "metaDescription": "Arthurのポートフォリオサイトです。現在、東京工業大学工学部情報工学科に在学中。Webアプリを中心に自分が制作したものを掲載しています。",
+  "metaDescription": "Arthur (ASAKURA Kazuki) のポートフォリオサイトです。現在、東京工業大学工学部情報工学科に在学中。Webアプリを中心に自分が制作したものを掲載しています。",
   "biography": {
     "history": {
       "title": "略歴",
@@ -26,7 +26,8 @@
       "title": "現所属・役職",
       "list": [
         "静岡県東部高等学校軽音楽部 合同発表会 音響チーム",
-        "Titech App Project"
+        "Titech App Project",
+        "東京工業大学 情報理工学院 小野（峻）研究室"
       ]
     },
     "formerAffiliation": {

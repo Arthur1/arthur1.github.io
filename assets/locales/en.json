@@ -1,9 +1,13 @@
 {
-  "metaDescription": "This is Arthur's portfolio website. Currently I study computer science at Tokyo Tech. You can view what I've created, especially web apps.",
+  "metaDescription": "This is Arthur's portfolio website. Currently I study computer science at Tokyo Tech. You can explore what I've created, especially web apps.",
   "biography": {
     "history": {
       "title": "Education",
       "list": [
+        {
+          "date": "Mar 2021",
+          "description": "Completed Basic Education Program for Leading Information Technology Specialists [enPiT AiBiC (AI & Big data) Course]"
+        },
         {
           "date": "Apr 2015 - Current",
           "description": "Tokyo Institute of Technology, Bachelor of Engineering"
@@ -18,7 +22,8 @@
       "title": "Affiliation",
       "list": [
         "Public Address Team, Joint Concert of High School Band Clubs in Shizuoka",
-        "Titech App Project"
+        "Titech App Project",
+        "Mathematical Data Informatics (MDI) Lab., Dept. of Computer Science, School of Computing, Tokyo Tech"
       ]
     },
     "formerAffiliation": {
@@ -89,7 +94,7 @@
     },
     "gachiproOfSysimpl": {
       "title": "Fully understand the exam schedule",
-      "description": "In the course of Workshop on System Implementation [CSC.T375], we developed an app for searching information of final exams. I was the project manager and a front-end developer."
+      "description": "In the  courseof Workshop on System Implementation [CSC.T375], we developed an app for searching information of final exams. I was the project manager and a front-end developer."
     },
     "nationalEconomy": {
       "title": "National Economy Online",
