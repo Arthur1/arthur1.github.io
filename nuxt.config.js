@@ -17,6 +17,7 @@ export default {
   ],
   modules: [
     'nuxt-i18n',
+    '@nuxtjs/robots',
     '@nuxtjs/sitemap',
   ],
   buildModules: [
@@ -96,6 +97,17 @@ export default {
     seo: true,
     baseUrl: env.BASE_URL,
   },
+  robots: [
+    {
+      UserAgent: '*',
+      Allow: '/',
+      Sitemap: `${env.BASE_URL}/sitemap.xml`,
+    },
+    {
+      UserAgent: '*',
+      Disallow: '/tutorial-web-2021/',
+    },
+  ],
   sitemap: {
     hostname: env.BASE_URL,
   },
