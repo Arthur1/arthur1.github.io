@@ -55,6 +55,7 @@
       <h2 class="headline2">{{ $t('biography.qualifications.title') }}</h2>
       <ul>
         <li>{{ $t('biography.qualifications.list[0]') }}</li>
+        <li>{{ $t('biography.qualifications.list[1]') }}</li>
       </ul>
     </div>
   </div>
