@@ -83,7 +83,7 @@ export default {
   width: 100%;
   height: 100vh;
   display: none;
-  overflow: hidden;
+  overflow: auto;
   position: fixed;
   background: $gray;
   color: white;
