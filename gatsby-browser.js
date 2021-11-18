@@ -1,7 +1,3 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
+import 'ress/ress.css'
+import '@fontsource/noto-sans-jp/400.css'
+import './src/styles/globals.scss'
