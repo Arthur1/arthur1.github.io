@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import type { FC, ReactNode } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import Navigation from './Navigation'
@@ -9,8 +9,8 @@ interface LayoutProps {
 }
 
 const Layout: FC<LayoutProps> = ({ children }) => {
-  const [spNavIsOpen, setSpNavIsOpen] = React.useState(false)
-  const [openButtonIsBlack, setOpenButtonIsBlack] = React.useState(false)
+  const [spNavIsOpen, setSpNavIsOpen] = useState(false)
+  const [openButtonIsBlack, setOpenButtonIsBlack] = useState(false)
   const openSpNav = () => {
     setSpNavIsOpen(true)
   }
@@ -30,13 +30,13 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 
   const scrollHandler = useCallback(() => {
     const scrollTop = window.scrollY
-    console.log(scrollTop)
     setOpenButtonIsBlack(scrollTop > 175)
   }, [])
 
   useEffect(() => {
     document.addEventListener('scroll', scrollHandler, { passive: true })
-  })
+    return () => document.removeEventListener('scroll', scrollHandler)
+  }, [spNavIsOpen])
 
   return (
     <div className={styles.baseWrapper}>
