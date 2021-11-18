@@ -1,0 +1,17 @@
+.historyList,
+.historyListEn {
+  display: flex;
+  flex-wrap: wrap;
+}
+.historyList > dt {
+  width: 5em;
+}
+.historyList > dd {
+  width: calc(100% - 5em);
+}
+.historyListEn > dt {
+  width: 12em;
+}
+.historyListEn > dd {
+  width: calc(100% - 12em);
+}

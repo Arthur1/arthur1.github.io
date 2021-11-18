@@ -1,0 +1,9 @@
+@use '../styles/mixin' as *;
+
+.headline2 {
+  margin: 1rem 0;
+  color: $gray;
+  &::first-letter {
+    color: $red;
+  }
+}
