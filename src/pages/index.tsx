@@ -1,24 +1,29 @@
 import React from 'react'
 import type { FC } from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import SiteLogo from '../components/SiteLogo'
 import * as styles from './index.module.scss'
 
 const IndexPage: FC = () => {
   return (
-    <Layout>
-      <div className={styles.eyeCatch}>
-        <div className={styles.eyeCatchLogo}>
-          <SiteLogo className={styles.eyeCatchLogoImg} />
-          <div className={styles.eyeCatchLogoText}>Arthur&apos;s Portfolio</div>
+    <>
+      <Seo />
+      <Layout>
+        <div className={styles.eyeCatch}>
+          <div className={styles.eyeCatchLogo}>
+            <SiteLogo className={styles.eyeCatchLogoImg} />
+            <div className={styles.eyeCatchLogoText}>Arthur's Portfolio</div>
+          </div>
+          <div className={styles.eyeCatchText}>
+            La mélancolie n'est que de la ferveur retombée.
+            <br />
+            ──André Paul Guillaume Gide
+          </div>
         </div>
-        <div className={styles.eyeCatchText}>
-          La mélancolie n&apos;est que de la ferveur retombée.
-          <br />
-          ──André Paul Guillaume Gide
-        </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 
@@ -45,3 +50,17 @@ const IndexPage2: FC = () => (
 */
 
 export default IndexPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

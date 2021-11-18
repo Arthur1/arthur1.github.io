@@ -1,6 +1,7 @@
 import React, { useEffect, useCallback } from 'react'
 import type { FC, ReactNode } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
+import Navigation from './Navigation'
 import * as styles from './Layout.module.scss'
 
 interface LayoutProps {
@@ -40,9 +41,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <div className={styles.baseWrapper}>
       <header className={navBoxClassName}>
-        {
-          //<Navigation />
-        }
+        <Navigation />
       </header>
       <main className={styles.mainBox}>{children}</main>
       <div className={toggleButtonBoxClassName}>
