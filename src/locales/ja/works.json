@@ -1,0 +1,74 @@
+{
+  "koudaisai2016": {
+    "title": "工大祭2016公式サイト",
+    "description": "主にバックエンド（認証・各種申請フォームのロジック）を担当。Webパンフレットでは模擬店マップなどのフロントエンドも担当。"
+  },
+  "koudaisai2017": {
+    "title": "工大祭2017公式サイト",
+    "description": "参加団体へ提供する企画情報APIの設計、来場者にスマートフォンでグランプリ投票を行ってもらう新システムの実装を担当。"
+  },
+  "goukaku": {
+    "title": "工大祭実行委員会受験生応援サイト",
+    "description": "受験生向けの情報を掲載するサイトを新規開設。デザイン、フロントエンド、バックエンドを担当。JavaScriptを使用せずにフロントの実装をした。"
+  },
+  "titechAppProject": {
+    "title": "Titech App Project Webサイト",
+    "description": "東工大生向けのアプリ・ツールを開発するサークルのWebサイト。フロントエンドを担当。"
+  },
+  "buratsuki": {
+    "title": "ぶらつき学生ポータル",
+    "description": "拡張デッキ入アグリコラのサークル内向け戦績管理ツール。開発のすべてを担当。"
+  },
+  "agricolaBook": {
+    "title": "教養特論：拡張アグリコラ学 + Randomizer for Agricola",
+    "description": "ボードゲーム「アグリコラ」の拡張デッキファンブックを自費出版。ゲームマーケット2018秋にて頒布し、110部を完売。読者付録のランダマイザWebアプリも開発した。"
+  },
+  "tokyoKoryo": {
+    "title": "東京香陵同窓会 Webサイト",
+    "description": "東京香陵同窓会のWebサイトをリニューアルした。"
+  },
+  "internalSpace": {
+    "title": "Internal Space Webサイト",
+    "description": "アート制作グループInternal SpaceのWebサイトを制作した。"
+  },
+  "reborn": {
+    "title": "Re:born 〜生まれる体験出産VR〜",
+    "description": "第27回国際学生対抗バーチャルリアリティコンテスト出展作品。体験者の顔写真を撮影するデバイス、GANを用いて生成した両親の顔写真を生成するデバイス、生成された画像を表示するデバイスを繋ぐアプリケーションの開発を担当した。"
+  },
+  "lifegame": {
+    "title": "ライフゲームシミュレータ",
+    "description": "工大祭2019 SF研究会講義室企画「人工生命」で展示予定だったもの。展示は令和元年東日本台風の影響で中止。"
+  },
+  "gachiproOfSysimpl": {
+    "title": "試験日程完全に理解した",
+    "description": "CSC.T375 システム構築演習にてチーム制作した、東京工業大学の試験日程を閲覧しやすくするWebアプリケーション。プロジェクトマネージャおよびフロントエンドを担当。"
+  },
+  "nationalEconomy": {
+    "title": "National Economy Online",
+    "description": "Stay Homeプロジェクト第一弾。国産ワカプレボードゲームの傑作、ナショナルエコノミーをオンラインで遊べるWebアプリケーションを開発した。ゲーム工房スパ帝国様の二次利用ガイドラインに準拠。"
+  },
+  "agriCompanion": {
+    "title": "AgriCompanion",
+    "description": "Stay Homeプロジェクト第二弾。ボードゲーム「アグリコラ」をオンラインで遊ぶ際に、手札のドラフトや管理が行えるWebアプリケーションを開発した。WebSocketを利用してリアルタイムに更新される。"
+  },
+  "shirenInpasu": {
+    "title": "Shiren Inpasu",
+    "description": "ローグライクゲームの「風来のシレン」シリーズの識別支援ツール。2018年に作ったShiren IdentifierがベースのPWA。"
+  },
+  "agricolaDb": {
+    "title": "Agricola DB",
+    "description": "アグリコラに関する各種サービスに使用するデータベースを統一するためにAPIサーバを制作した。また、これを利用してJAMStack構成のWebサイトを制作した。膨大なカード情報の閲覧や検索がスムーズにできる。"
+  },
+  "oop": {
+    "title": "OOP Agents Visualizer",
+    "description": "CSC.T273 オブジェクト指向プログラミングの最終課題のデバッグのためにビジュアライザを作成した。"
+  },
+  "tutorialWeb": {
+    "title": "Web講習会",
+    "description": "Titech App Project向けに、Webの基礎からNext.jsを利用した静的サイトの開発までを扱う講習会を実施した。講習会の資料サイト自体がNext.jsで作られている。"
+  },
+  "mdiLab": {
+    "title": "MDILab ロゴ",
+    "description": "研究室のロゴとアイコンをデザインした。信号処理と数理最適化をイメージしている。"
+  }
+}

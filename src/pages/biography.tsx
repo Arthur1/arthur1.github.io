@@ -18,7 +18,7 @@ interface HistoryRow {
 
 const BiographyPage: FC = () => {
   const { language } = useI18next()
-  const { t } = useTranslation()
+  const { t } = useTranslation(['biography'])
 
   const historyList = t('history.list', { returnObjects: true }) as HistoryRow[]
   const historyListClassName = language === 'ja' ? styles.historyList : styles.historyListEn
@@ -92,7 +92,9 @@ export default BiographyPage
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: { ns: { in: ["common", "biography"] }, language: { eq: $language } }
+    ) {
       edges {
         node {
           ns

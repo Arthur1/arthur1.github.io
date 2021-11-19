@@ -1,0 +1,141 @@
+[
+  {
+    "key": "koudaisai2016",
+    "year": 2016,
+    "image": "works/koudaisai2016.png",
+    "devs": ["php", "fuelphp", "javascript", "mysql"],
+    "urls": ["https://2016.koudaisai.jp/"]
+  },
+  {
+    "key": "koudaisai2017",
+    "year": 2017,
+    "image": "works/koudaisai2017.png",
+    "devs": ["php", "fuelphp", "javascript", "mysql"],
+    "urls": ["https://2017.koudaisai.jp/"]
+  },
+  {
+    "key": "goukaku",
+    "year": 2017,
+    "image": "works/goukaku.png",
+    "devs": ["php", "fuelphp", "mysql"]
+  },
+  {
+    "key": "titechAppProject",
+    "year": 2018,
+    "image": "works/titech-app-project.png",
+    "devs": ["javascript", "nuxt", "vue", "gas", "aws"],
+    "urls": ["https://titech.app/"]
+  },
+  {
+    "key": "buratsuki",
+    "year": 2018,
+    "image": "works/buratsuki.png",
+    "devs": ["php", "fuelphp", "javascript", "mysql", "docker"],
+    "repositoryUrls": ["https://github.com/Arthur1/buratsuki-portal"]
+  },
+  {
+    "key": "agricolaBook",
+    "year": 2018,
+    "image": "works/agricola-book.png",
+    "devs": ["javascript", "vue", "bootstrap"],
+    "urls": ["https://app.buratsuki.page/"],
+    "repositoryUrls": ["https://github.com/Arthur1/agricola-app2"]
+  },
+  {
+    "key": "tokyoKoryo",
+    "year": 2019,
+    "image": "works/tokyo-koryo.png",
+    "devs": ["php", "wordpress", "mysql"],
+    "urls": ["https://tokyokoryo.org/"]
+  },
+  {
+    "key": "internalSpace",
+    "year": 2019,
+    "image": "works/internal-space.png",
+    "devs": ["php", "wordpress", "mysql"],
+    "urls": ["https://internal-space.com/"]
+  },
+  {
+    "key": "reborn",
+    "year": 2019,
+    "image": "works/reborn.png",
+    "devs": ["gas", "ifttt", "javascript"],
+    "urls": ["https://internal-space.com/works/rebornvr/"]
+  },
+  {
+    "key": "lifegame",
+    "year": 2019,
+    "image": "works/lifegame.png",
+    "devs": ["javascript", "vue"],
+    "urls": ["https://arthur1.github.io/sf-lifegame/"],
+    "repositoryUrls": ["https://github.com/Arthur1/sf-lifegame"]
+  },
+  {
+    "key": "gachiproOfSysimpl",
+    "year": 2020,
+    "image": "works/gachipro-of-sysimpl.png",
+    "devs": [
+      "scala",
+      "playFramework",
+      "javascript",
+      "vue",
+      "bootstrap",
+      "python",
+      "mysql",
+      "docker"
+    ]
+  },
+  {
+    "key": "nationalEconomy",
+    "year": 2020,
+    "image": "works/national-economy.png",
+    "devs": ["php", "laravel", "javascript", "vue", "bootstrap", "mysql", "redis", "docker"],
+    "urls": ["https://neo.buratsuki.page/"],
+    "repositoryUrls": ["https://github.com/Arthur1/national-economy2"]
+  },
+  {
+    "key": "agriCompanion",
+    "year": 2020,
+    "image": "works/agri-companion.jpg",
+    "devs": ["php", "laravel", "javascript", "vue", "bootstrap", "mysql", "redis"],
+    "repositoryUrls": ["https://github.com/Arthur1/agricola-companion"]
+  },
+  {
+    "key": "shirenInpasu",
+    "year": 2020,
+    "image": "works/shiren-inpasu.png",
+    "devs": ["javascript", "nuxt", "vue", "bootstrap"],
+    "urls": ["https://inpasu.buratsuki.page/"],
+    "repositoryUrls": ["https://github.com/Arthur1/shiren-inpasu"]
+  },
+  {
+    "key": "agricolaDb",
+    "year": 2021,
+    "image": "works/agricola-db.png",
+    "devs": ["php", "laravel", "javascript", "nuxt", "vue", "bootstrap", "mysql", "docker"],
+    "urls": ["https://db.buratsuki.page/"],
+    "repositoryUrls": [
+      "https://github.com/Arthur1/agricola-database-server",
+      "https://github.com/Arthur1/agricola-database-frontend"
+    ]
+  },
+  {
+    "key": "oop",
+    "year": 2021,
+    "image": "works/oop.png",
+    "devs": ["javascript", "vue", "bootstrap"],
+    "urls": ["https://arthur1.github.io/agents-visualizer/"],
+    "repositoryUrls": ["https://github.com/Arthur1/agents-visualizer"]
+  },
+  {
+    "key": "tutorialWeb",
+    "year": 2021,
+    "image": "works/tutorial-web.png",
+    "devs": ["typescript", "next", "react", "bootstrap"]
+  },
+  {
+    "key": "mdiLab",
+    "year": 2021,
+    "image": "works/mdilab.png"
+  }
+]
