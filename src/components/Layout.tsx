@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import type { FC, ReactNode } from 'react'
+import { globalHistory } from '@reach/router'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import Navigation from './Navigation'
 import * as styles from './Layout.module.scss'
@@ -37,6 +38,12 @@ const Layout: FC<LayoutProps> = ({ children }) => {
     document.addEventListener('scroll', scrollHandler, { passive: true })
     return () => document.removeEventListener('scroll', scrollHandler)
   }, [spNavIsOpen])
+
+  useEffect(() => {
+    return globalHistory.listen(() => {
+      closeSpNav()
+    })
+  }, [])
 
   return (
     <div className={styles.baseWrapper}>
