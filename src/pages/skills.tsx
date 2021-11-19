@@ -22,6 +22,7 @@ type SkillsPageProps = PageProps<SkillsPageDataType>
 
 const SkillsPage: FC<SkillsPageProps> = ({ data }) => {
   const { skills } = data
+
   const categories = [
     'language',
     'frontendFramework',
@@ -32,8 +33,10 @@ const SkillsPage: FC<SkillsPageProps> = ({ data }) => {
     'ci',
     'os',
     'misc',
-  ]
-  let skillMap: { [s: string]: SkillsJson[] } = {}
+  ] as const
+  type Category = typeof categories[number]
+
+  let skillMap = {} as { [key in Category]?: SkillsJson[] }
   for (let category of categories) {
     skillMap[category] = skills.nodes.filter(skill => skill.category === category)
   }
