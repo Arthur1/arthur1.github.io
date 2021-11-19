@@ -7,6 +7,7 @@ import Seo from '../components/Seo'
 import Container from '../components/Container'
 import Headline1 from '../components/Headline1'
 import Headline2 from '../components/Headline2'
+import HeadlineBgImage from '../images/headline-bg/favorites.jpg'
 
 const FavoritesPage: FC = () => {
   const { t } = useTranslation()
@@ -15,7 +16,7 @@ const FavoritesPage: FC = () => {
     <>
       <Seo title="Favorites" />
       <Layout>
-        <Headline1 backgroundUrl="/images/headline-bg/favorites.jpg">Favorites</Headline1>
+        <Headline1 backgroundUrl={HeadlineBgImage}>Favorites</Headline1>
         <Container>
           <Headline2>{t('music.title')}</Headline2>
           <ul>

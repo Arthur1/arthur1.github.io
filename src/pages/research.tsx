@@ -7,6 +7,7 @@ import Seo from '../components/Seo'
 import Container from '../components/Container'
 import Headline1 from '../components/Headline1'
 import Headline2 from '../components/Headline2'
+import HeadlineBgImage from '../images/headline-bg/research.png'
 import * as styles from './research.module.scss'
 
 const ResearchPage: FC = () => {
@@ -16,7 +17,7 @@ const ResearchPage: FC = () => {
     <>
       <Seo title="Research" />
       <Layout>
-        <Headline1 backgroundUrl="/images/headline-bg/research.png">Research</Headline1>
+        <Headline1 backgroundUrl={HeadlineBgImage}>Research</Headline1>
         <Container>
           <Headline2>{t('interests.title')}</Headline2>
           <ul>

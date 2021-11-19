@@ -8,6 +8,7 @@ import Container from '../components/Container'
 import Headline1 from '../components/Headline1'
 import Headline2 from '../components/Headline2'
 import ExternalLink from '../components/ExternalLink'
+import HeadlineBgImage from '../images/headline-bg/biography.jpg'
 import * as styles from './biography.module.scss'
 
 interface HistoryRow {
@@ -26,7 +27,7 @@ const BiographyPage: FC = () => {
     <>
       <Seo title="Biography" />
       <Layout>
-        <Headline1 backgroundUrl="/images/headline-bg/biography.jpg">Biography</Headline1>
+        <Headline1 backgroundUrl={HeadlineBgImage}>Biography</Headline1>
         <Container>
           <h1>ASAKURA Kazuki a.k.a. Arthur</h1>
           <Headline2>{t('history.title')}</Headline2>

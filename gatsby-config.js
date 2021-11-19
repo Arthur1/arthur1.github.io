@@ -8,10 +8,11 @@ module.exports = {
     siteUrl,
   },
   plugins: [
-    `gatsby-plugin-typescript`,
+    `gatsby-plugin-ts`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,6 +25,13 @@ module.exports = {
       options: {
         name: `locale`,
         path: `${__dirname}/src/locales`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,
