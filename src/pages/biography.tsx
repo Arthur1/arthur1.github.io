@@ -25,7 +25,7 @@ const BiographyPage: FC = () => {
 
   return (
     <>
-      <Seo title="Biography" />
+      <Seo title="Biography" description={t('description')} />
       <Layout>
         <Headline1 backgroundUrl={HeadlineBgImage}>Biography</Headline1>
         <Container>

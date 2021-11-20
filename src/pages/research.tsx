@@ -15,7 +15,7 @@ const ResearchPage: FC = () => {
 
   return (
     <>
-      <Seo title="Research" />
+      <Seo title="Research" description={t('description')} />
       <Layout>
         <Headline1 backgroundUrl={HeadlineBgImage}>Research</Headline1>
         <Container>

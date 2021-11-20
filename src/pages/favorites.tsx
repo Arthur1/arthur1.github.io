@@ -14,7 +14,7 @@ const FavoritesPage: FC = () => {
 
   return (
     <>
-      <Seo title="Favorites" />
+      <Seo title="Favorites" description={t('description')} />
       <Layout>
         <Headline1 backgroundUrl={HeadlineBgImage}>Favorites</Headline1>
         <Container>

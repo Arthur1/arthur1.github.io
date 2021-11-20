@@ -10,7 +10,7 @@ import Container from '../components/Container'
 import Headline1 from '../components/Headline1'
 import HeadlineBgImage from '../images/headline-bg/works.jpg'
 import WorkBox from '../components/page.works/WorkBox'
-import type { ImageSharp, Maybe, Query } from '../../graphql-types'
+import type { Query } from '../../graphql-types'
 
 interface WorksPageDataType {
   works: Query['allWorksJson']
@@ -31,7 +31,7 @@ const WorksPage: FC<WorksPageProps> = ({ data }) => {
 
   return (
     <>
-      <Seo title="Works" />
+      <Seo title="Works" description={t('description')} />
       <Layout>
         <Headline1 backgroundUrl={HeadlineBgImage}>Works</Headline1>
         <Container>

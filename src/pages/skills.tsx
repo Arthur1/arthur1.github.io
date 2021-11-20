@@ -2,6 +2,7 @@ import React from 'react'
 import type { FC } from 'react'
 import { graphql } from 'gatsby'
 import type { PageProps } from 'gatsby'
+import { useTranslation } from 'react-i18next'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import Container from '../components/Container'
@@ -22,6 +23,7 @@ type SkillsPageProps = PageProps<SkillsPageDataType>
 
 const SkillsPage: FC<SkillsPageProps> = ({ data }) => {
   const { skills } = data
+  const { t } = useTranslation()
 
   const categories = [
     'language',
@@ -43,7 +45,7 @@ const SkillsPage: FC<SkillsPageProps> = ({ data }) => {
 
   return (
     <>
-      <Seo title="Skills" />
+      <Seo title="Skills" description={t('description')} />
       <Layout>
         <Headline1 backgroundUrl={HeadlineBgImage}>Skills</Headline1>
         <Container>
