@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-tsx",
+    "path": "/",
+    "result": {"data":{"locales":{"edges":[{"node":{"ns":"common","data":"{\"description\":\"Arthur (ASAKURA Kazuki) のポートフォリオサイトです。現在、東京工業大学工学部情報工学科に在学中。Webアプリを中心に自分が制作したものを掲載しています。\"}","language":"ja"}}]}},"pageContext":{"language":"ja","i18n":{"language":"ja","languages":["ja","en"],"defaultLanguage":"ja","generateDefaultLanguagePage":false,"routed":false,"originalPath":"/","path":"/"}}},
+    "staticQueryHashes": ["512065377","945847551"]}
