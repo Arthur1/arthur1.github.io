@@ -44,7 +44,7 @@ const Seo: FC<SeoProps> = ({ title, description }) => {
         { property: 'og:site_name', content: defaultTitle },
         {
           property: 'og:image',
-          content: `${siteUrl}/static/images/ogpimage.png`,
+          content: `${siteUrl}/images/ogpimage.png`,
         },
       ]}
     />
