@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-index-tsx",
     "path": "/en/",
     "result": {"data":{"locales":{"edges":[{"node":{"ns":"common","data":"{\"description\":\"This is Arthur's portfolio website. I major in computer science at Tokyo Tech. You can explore what I've created, especially web apps.\"}","language":"en"}}]}},"pageContext":{"language":"en","i18n":{"language":"en","languages":["ja","en"],"defaultLanguage":"ja","generateDefaultLanguagePage":false,"routed":true,"originalPath":"/","path":"en/"}}},
-    "staticQueryHashes": ["512065377","945847551"]}
+    "staticQueryHashes": ["277565096","512065377","945847551"]}
