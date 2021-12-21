@@ -53,11 +53,6 @@ const BiographyPage: FC = () => {
               </ExternalLink>
             </li>
             <li>
-              <ExternalLink href="http://www.ocw.titech.ac.jp/index.php?module=General&action=T0300&GakubuCD=4&GakkaCD=342300&KeiCD=23&KougiCD=202102444&Nendo=2021&vid=03">
-                {t('currentAffiliations.affiliations.sysdes2021')}
-              </ExternalLink>
-            </li>
-            <li>
               <ExternalLink href="http://www.ocw.titech.ac.jp/index.php?module=General&action=T0300&GakubuCD=4&GakkaCD=342300&KeiCD=23&KougiCD=202102449&Nendo=2021&vid=03">
                 {t('currentAffiliations.affiliations.sysimpl2021')}
               </ExternalLink>
@@ -65,6 +60,7 @@ const BiographyPage: FC = () => {
           </ul>
           <Headline2>{t('formerAffiliations.title')}</Headline2>
           <ul>
+            <li>{t('formerAffiliations.affiliations.sysdes2021')}</li>
             <li>{t('formerAffiliations.affiliations.jizi')}</li>
             <li>{t('formerAffiliations.affiliations.buszemi')}</li>
             <li>{t('formerAffiliations.affiliations.swimmingInstructor')}</li>
