@@ -5,8 +5,19 @@ import LinksList from './Navigation/LinksList'
 import LangSwitcherList from './Navigation/LangSwitchersList'
 import SnsList from './Navigation/SnsList'
 import * as styles from './Navigation.module.scss'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const Navigation = () => {
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        buildTime
+      }
+    }
+  `)
+  const buildDate = new Date(site.buildTime)
+  const buildDateString = buildDate.toLocaleString('ja-JP')
+
   return (
     <>
       <div className={styles.logoBox}>
@@ -19,7 +30,12 @@ const Navigation = () => {
         <LinksList />
         <LangSwitcherList />
         <SnsList />
-        <small className={styles.copyright}>&copy; 2020-2021 Arthur</small>
+        <div>
+          <small className={styles.copyright}>&copy; 2020-2021 Arthur</small>
+        </div>
+        <div>
+          <small className={styles.copyright}>Last Modified: {buildDateString}</small>
+        </div>
       </nav>
     </>
   )
