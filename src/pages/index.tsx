@@ -19,7 +19,7 @@ const IndexPage: FC = () => {
             <SiteLogo className={styles.eyeCatchLogoImg} />
             <div className={styles.eyeCatchLogoText}>Arthur's Portfolio</div>
           </div>
-          <div className={styles.eyeCatchText}>
+          <div className={styles.eyeCatchText} lang="fr">
             La mélancolie n'est que de la ferveur retombée.
             <br />
             ──André Paul Guillaume Gide
