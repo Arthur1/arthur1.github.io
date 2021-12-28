@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /tutorial-web-2021/
+Sitemap: https://arthur1.github.io/sitemap-index.xml
+Host: https://arthur1.github.io
