@@ -86,5 +86,22 @@ module.exports = {
         excludes: ['/404/', '/en/404/']
       }
     },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: siteUrl,
+        sitemap: `${siteUrl}sitemap-index.xml`,
+        policy: [
+          {
+            userAgent: '*',
+            allow: '/',
+          },
+          {
+            userAgent: '*',
+            disallow: '/tutorial-web-2021/',
+          }
+        ],
+      },
+    },
   ],
 }
