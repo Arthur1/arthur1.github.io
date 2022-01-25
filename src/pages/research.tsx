@@ -28,6 +28,7 @@ const ResearchPage: FC = () => {
           </ul>
           <Headline2>{t('publications.title')}</Headline2>
           <ol className={styles.publicationsList}>
+            <li dangerouslySetInnerHTML={{ __html: t('publications.publications.bthesis') }}></li>
             <li dangerouslySetInnerHTML={{ __html: t('publications.publications.vric2020') }}></li>
             <li dangerouslySetInnerHTML={{ __html: t('publications.publications.vrsj2019') }}></li>
           </ol>
