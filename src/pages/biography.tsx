@@ -41,6 +41,11 @@ const BiographyPage: FC = () => {
           </dl>
           <Headline2>{t('currentAffiliations.title')}</Headline2>
           <ul>
+            <li>
+              <ExternalLink href="https://teleneco.dev/">
+                {t('currentAffiliations.affiliations.teleneco')}
+              </ExternalLink>
+            </li>
             <li>{t('currentAffiliations.affiliations.jointConcertPa')}</li>
             <li>
               <ExternalLink href="https://titech.app/">
@@ -52,20 +57,14 @@ const BiographyPage: FC = () => {
                 {t('currentAffiliations.affiliations.mdiLab')}
               </ExternalLink>
             </li>
-            <li>
-              <ExternalLink href="http://www.ocw.titech.ac.jp/index.php?module=General&action=T0300&GakubuCD=4&GakkaCD=342300&KeiCD=23&KougiCD=202102449&Nendo=2021&vid=03">
-                {t('currentAffiliations.affiliations.sysimpl2021')}
-              </ExternalLink>
-            </li>
           </ul>
           <Headline2>{t('formerAffiliations.title')}</Headline2>
           <ul>
-            <li>{t('formerAffiliations.affiliations.sysdes2021')}</li>
+            <li>{t('formerAffiliations.affiliations.sysdesimpl2021')}</li>
             <li>{t('formerAffiliations.affiliations.jizi')}</li>
             <li>{t('formerAffiliations.affiliations.buszemi')}</li>
             <li>{t('formerAffiliations.affiliations.swimmingInstructor')}</li>
             <li>{t('formerAffiliations.affiliations.koryosai67')}</li>
-            <li>{t('formerAffiliations.affiliations.numazuTabloid')}</li>
           </ul>
           <Headline2>{t('awards.title')}</Headline2>
           <ul>

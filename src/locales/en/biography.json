@@ -19,21 +19,20 @@
   "currentAffiliations": {
     "title": "Affiliations",
     "affiliations": {
+      "teleneco": "Representative, Teleneco Works",
       "jointConcertPa": "Public Address Team, Joint Concert of High School Band Clubs in Shizuoka",
       "titechAppProject": "Titech App Project",
-      "mdiLab": "Research Assistant, Mathematical Data Informatics (MDI) Lab., Dept. of Computer Science, Sch. of Computing, Tokyo Tech",
-      "sysimpl2021": "Teaching Assistant for [CSC.T375] Workshop on System Implementation (Image Processing Field) (2021)"
+      "mdiLab": "Research Assistant, Mathematical Data Informatics (MDI) Lab., Dept. of Computer Science, Sch. of Computing, Tokyo Tech"
     }
   },
   "formerAffiliations": {
     "title": "Former Affiliations",
     "affiliations": {
-      "sysdes2021": "Teaching Assistant for [CSC.T364] Workshop on System Design (Image Processing Field) (2021)",
+      "sysdesimpl2021": "Teaching Assistant for [CSC.T364] Workshop on System Design and [CSC.T375] Workshop on System Implementation (Image Processing Field) (2021)",
       "jizi": "Network Team, Tokyo Tech Festival Executive Committee",
       "buszemi": "Staff, School of Computing Freshman Seminar, Tokyo Tech",
       "swimmingInstructor": "Swimming Instructor, Numazu Higashi Highschool (2015-2018)",
-      "koryosai67": "Chairman, 67th Koryo Festival",
-      "numazuTabloid": "Chief Editor, Numazu Tabloid"
+      "koryosai67": "Chairman, 67th Koryo Festival"
     }
   },
   "awards": {
