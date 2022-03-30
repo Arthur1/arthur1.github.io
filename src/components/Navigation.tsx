@@ -17,6 +17,7 @@ const Navigation = () => {
   `)
   const buildDate = new Date(site.buildTime)
   const buildDateString = buildDate.toLocaleString('ja-JP')
+  const buildYear = buildDate.getFullYear()
 
   return (
     <>
@@ -31,7 +32,7 @@ const Navigation = () => {
         <LangSwitcherList />
         <SnsList />
         <div>
-          <small className={styles.copyright}>&copy; 2020-2021 Arthur</small>
+          <small className={styles.copyright}>&copy; 2020-{buildYear} Arthur</small>
         </div>
         <div>
           <small className={styles.copyright}>Last Modified: {buildDateString}</small>
