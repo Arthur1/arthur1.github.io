@@ -52,14 +52,14 @@ const BiographyPage: FC = () => {
                 {t('currentAffiliations.affiliations.titechAppProject')}
               </ExternalLink>
             </li>
-            <li>
-              <ExternalLink href="https://www.mdi.c.titech.ac.jp/">
-                {t('currentAffiliations.affiliations.mdiLab')}
-              </ExternalLink>
-            </li>
           </ul>
           <Headline2>{t('formerAffiliations.title')}</Headline2>
           <ul>
+            <li>
+              <ExternalLink href="https://www.mdi.c.titech.ac.jp/">
+                {t('formerAffiliations.affiliations.mdiLab')}
+              </ExternalLink>
+            </li>
             <li>{t('formerAffiliations.affiliations.sysdesimpl2021')}</li>
             <li>{t('formerAffiliations.affiliations.jizi')}</li>
             <li>{t('formerAffiliations.affiliations.buszemi')}</li>
