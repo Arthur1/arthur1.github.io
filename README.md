@@ -5,7 +5,7 @@
 ```shell
 git clone git@github.com:Arthur1/arthur1.github.io.git
 cd arthur1.github.io
-nodenv install 17.1.0
+nodenv install
 yarn
 ```
 
