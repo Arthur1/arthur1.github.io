@@ -1,9 +1,0 @@
-@use '../../styles/mixin.scss' as *;
-
-.langSwitcherLink {
-  color: $violet;
-  text-decoration: none;
-  &:hover {
-    opacity: 0.75;
-  }
-}
