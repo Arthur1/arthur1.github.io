@@ -1,0 +1,8 @@
+.Headline2 {
+  margin: 1rem 0;
+  color: var(--color-gray);
+}
+
+.Headline2::first-letter {
+  color: var(--color-red);
+}

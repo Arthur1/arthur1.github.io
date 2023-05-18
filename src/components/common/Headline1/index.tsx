@@ -6,8 +6,8 @@ type Headline1Props = Readonly<{
 
 const Headline1: React.FC<Headline1Props> = ({ children }) => {
   return (
-    <div className={styles.headlineBox}>
-      <h1 className={styles.headline}>{children}</h1>
+    <div className={styles.Headline1Box}>
+      <h1 className={styles.Headline1}>{children}</h1>
     </div>
   )
 }

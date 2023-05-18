@@ -1,12 +1,12 @@
-.headlineBox {
+.Headline1Box {
   background-repeat: repeat;
   background-blend-mode: overlay;
   background-position: 0;
   background-size: auto, cover;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC');
 }
-  
-.headline {
+
+.Headline1 {
   font-size: 3rem;
   color: white;
   padding: 4rem 0;
@@ -14,4 +14,3 @@
   letter-spacing: 0.2rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-  
