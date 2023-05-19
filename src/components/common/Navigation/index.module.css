@@ -1,0 +1,38 @@
+.Navigation {
+  display: block;
+  background: var(--color-gray);
+  color: white;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  @media screen and (min-width: 1000px) {
+    width: 330px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.8);
+  }
+}
+
+.SiteTitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 30px 0 50px;
+}
+
+.LogoBox {
+  width: 70%;
+  margin: 60px auto 30px;
+  display: none;
+  @media screen and (min-width: 1000px) {
+    display: block;
+  }
+}
+
+.Logo {
+  display: block;
+  width: 100%;
+  max-height: 100px;
+}
+
+.Copyright {
+  display: block;
+  text-align: center;
+}

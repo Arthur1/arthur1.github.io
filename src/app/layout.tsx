@@ -1,4 +1,7 @@
+import Navigation from '@/components/common/Navigation'
+import 'ress'
 import './globals.css'
+import styles from './layout.module.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -12,9 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>
-          <header>header</header>
-          <main>{children}</main>
+        <div className={styles.BaseWrapper}>
+          <header className={styles.NavigationWrapper}>
+            <Navigation />
+          </header>
+          <main className={styles.ContentWrapper}>{children}</main>
         </div>
       </body>
     </html>
