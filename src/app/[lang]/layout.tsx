@@ -1,8 +1,10 @@
-import Navigation from '@/components/common/Navigation'
+import { Inter } from 'next/font/google'
 import 'ress'
+
+import Navigation from '@/components/common/Navigation'
+
 import './globals.css'
 import styles from './layout.module.css'
-import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 

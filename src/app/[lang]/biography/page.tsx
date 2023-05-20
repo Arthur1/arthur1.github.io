@@ -1,8 +1,9 @@
+import Script from 'next/script'
+
 import Container from '@/components/common/Container'
 import Headline1 from '@/components/common/Headline1'
 import Headline2 from '@/components/common/Headline2'
 import { nonDefaultLanguages } from '@/libs/i18n'
-import Script from 'next/script'
 
 export const generateStaticParams = async () => nonDefaultLanguages.map(lang => ({ lang }))
 
