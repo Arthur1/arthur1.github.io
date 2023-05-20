@@ -7,27 +7,24 @@ export const nonDefaultLanguages = ['en'] as const
 export const languages = [fallbackLanguage, ...nonDefaultLanguages] as const
 export type Language = (typeof languages)[number]
 
-const resource = {
-  en: {
-    translation: {
-      greeting: 'hello',
-    },
-  },
-  ja: {
-    translation: {
-      greeting: 'こんにちは',
-    },
-  },
-} as const
+type useTranslationProps = Readonly<{
+  lang: string
+  translationDef: Readonly<{
+    [L in Language]: Readonly<{}>
+  }>
+}>
 
-export const useTranslation = async (lang: string) => {
+export const useTranslation = async ({ lang, translationDef }: useTranslationProps) => {
   const i18n = createInstance()
-  await i18n.use(initReactI18next).use(resourcesToBackend(resource)).init({
-    debug: true,
-    supportedLngs: languages,
-    fallbackLng: fallbackLanguage,
-    lng: lang,
-  })
+  await i18n
+    .use(initReactI18next)
+    .use(resourcesToBackend(translationDef))
+    .init({
+      debug: process.env.NODE_ENV == 'development',
+      supportedLngs: languages,
+      fallbackLng: fallbackLanguage,
+      lng: lang,
+    })
   return {
     t: i18n.getFixedT(lang),
     i18n,

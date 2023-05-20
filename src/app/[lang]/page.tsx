@@ -3,6 +3,8 @@ import Headline1 from '@/components/common/Headline1'
 import Headline2 from '@/components/common/Headline2'
 import { nonDefaultLanguages, useTranslation } from '@/libs/i18n'
 
+import translationDef from './translationDef'
+
 export const generateStaticParams = async () => nonDefaultLanguages.map(lang => ({ lang }))
 
 type IndexPageProps = Readonly<{
@@ -12,8 +14,8 @@ type IndexPageProps = Readonly<{
 }>
 
 const IndexPage = async (props: IndexPageProps) => {
-  const { params } = props
-  const { t } = await useTranslation(params.lang)
+  const { lang } = props.params
+  const { t } = await useTranslation({ lang, translationDef })
   return (
     <div>
       <div>
@@ -27,7 +29,7 @@ const IndexPage = async (props: IndexPageProps) => {
       <Headline1>{t('greeting')}</Headline1>
       <Container>
         <Headline2>greeting</Headline2>
-        <p>hello. {params.lang}</p>
+        <p>{t('greeting')}</p>
       </Container>
     </div>
   )

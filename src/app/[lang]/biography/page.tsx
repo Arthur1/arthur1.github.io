@@ -3,26 +3,34 @@ import Script from 'next/script'
 import Container from '@/components/common/Container'
 import Headline1 from '@/components/common/Headline1'
 import Headline2 from '@/components/common/Headline2'
-import { nonDefaultLanguages } from '@/libs/i18n'
+import { nonDefaultLanguages, useTranslation } from '@/libs/i18n'
+
+import translationDef from './translationDef'
 
 export const generateStaticParams = async () => nonDefaultLanguages.map(lang => ({ lang }))
 
-export default function Biography({}) {
+type BiographyPageProps = Readonly<{
+  params: {
+    lang: string
+  }
+}>
+
+export default async function BiographyPage(props: BiographyPageProps) {
+  const { lang } = props.params
+  const { t } = await useTranslation({ lang, translationDef })
   return (
     <div>
       <Headline1>Biography</Headline1>
       <Container>
         <h1>ASAKURA Kazuki a.k.a. Arthur</h1>
-        <Headline2>学歴</Headline2>
+        <Headline2>{t('education.title')}</Headline2>
         <dl>
-          <dt>2022.03</dt>
-          <dd>東京工業大学 工学部 情報工学科 卒業 学士(工学)</dd>
-          <dt>2021.03</dt>
-          <dd>同 IT特別教育プログラム基礎 (enPiT AiBiC) 修了</dd>
-          <dt>2015.04</dt>
-          <dd>同 第5類 入学</dd>
-          <dt>2015.03</dt>
-          <dd>静岡県立沼津東高等学校 普通科 卒業</dd>
+          {[...Array(lang === 'en' ? 3 : 4)].map((_, i) => (
+            <>
+              <dt>{t(`education.list.${i}.date`)}</dt>
+              <dd>{t(`education.list.${i}.content`)}</dd>
+            </>
+          ))}
         </dl>
         <Headline2>現所属・役職</Headline2>
         <ul>
