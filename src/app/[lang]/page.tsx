@@ -1,7 +1,7 @@
 import Container from '@/components/common/Container'
 import Headline1 from '@/components/common/Headline1'
 import Headline2 from '@/components/common/Headline2'
-import { nonDefaultLanguages } from '@/libs/i18n'
+import { nonDefaultLanguages, useTranslation } from '@/libs/i18n'
 
 export const generateStaticParams = async () => nonDefaultLanguages.map(lang => ({ lang }))
 
@@ -11,7 +11,9 @@ type IndexPageProps = Readonly<{
   }
 }>
 
-const IndexPage: React.FC<IndexPageProps> = ({ params }) => {
+const IndexPage = async (props: IndexPageProps) => {
+  const { params } = props
+  const { t } = await useTranslation(params.lang)
   return (
     <div>
       <div>
@@ -22,7 +24,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ params }) => {
         <br />
         ──André Paul Guillaume Gide
       </div>
-      <Headline1>Hello</Headline1>
+      <Headline1>{t('greeting')}</Headline1>
       <Container>
         <Headline2>greeting</Headline2>
         <p>hello. {params.lang}</p>
